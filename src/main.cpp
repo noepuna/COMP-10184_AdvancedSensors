@@ -33,7 +33,7 @@ void setup() {
 
   int deviceID = DS18B20.getAddress(tempDeviceAddress, 0);
 
-  if (!deviceID){
+  if (deviceID){
     Serial.println("DEVICE ID: " + String(deviceID));
   } else {
     Serial.println("DISCONNECTED");
